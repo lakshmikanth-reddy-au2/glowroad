@@ -69,7 +69,9 @@ class App extends Component {
     let have_winner = winner(this.state.board);
     let keep_playing = have_winner === null ? true : false;
     return (
+      <div><h1>Tic tac toe</h1>
       <div className="master">
+        
         <div className="game">
           <div className="board">
             {this.state.board.map((cell, index) => {
@@ -82,6 +84,7 @@ class App extends Component {
           <h4>PC Score: {this.state.pc_won}</h4>
           <h4>Tied: {this.state.tie}</h4>
         </div>
+      </div>
       </div>
     );
   }
